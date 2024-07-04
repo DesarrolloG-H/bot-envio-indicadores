@@ -26,7 +26,7 @@ def enviar_archivos_whatsapp(ruta_chromedriver, ruta_chromeperfil, carpeta_image
     input_element_buscador = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, buscadorWhatsaap_xpath)))
 
     # grupo_whatsaap = "Gestión HITSS - Proyecto MINPUB"
-    grupo_whatsaap = "yo"
+    grupo_whatsaap = "TEST"
     for letra in grupo_whatsaap:
         input_element_buscador.send_keys(letra)
         time.sleep(0.1)
